@@ -8,6 +8,9 @@
 const int DPIN_MIN = 2;
 const int DPIN_MAX = 12;
 
+const int APIN_MIN = 0;
+const int APIN_MAX = 7;
+
 
 void setup() {
   // put your setup code here, to run once:
@@ -18,7 +21,7 @@ void setup() {
 }
 
 void loop() {
-  for (int pin = 0; pin < 7; pin++) {
+  for (int pin = APIN_MIN; pin <= APIN_MAX; pin++) {
     int value = analogRead(pin);
     int b0 = value / 256;
     int b1 = value % 256;

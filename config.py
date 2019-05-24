@@ -5,5 +5,9 @@ TEAM = 5451
 
 # leave it default to use the default roboRIO ip
 # or set a custom one, like '127.0.0.1'
-SERVER_IP = 'default'
 
+# SERVER_IP = 'default'
+SERVER_IP = '127.0.0.1'
+
+
+PORTS = ['ttyUSB0', 'COM3']
